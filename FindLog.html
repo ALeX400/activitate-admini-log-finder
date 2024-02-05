@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Log Searcher</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="input-container">
+		<input type="text" id="adminName" placeholder="Admin Name">
+		<div id="commandContainer">
+			<div class="command">
+				<input type="text" class="commandInput" placeholder="Command">
+				<button class="removeCommand">-</button>
+			</div>
+		</div>
+		<button id="addCommand">+</button>
+		<button id="find">Find</button>
+	</div>
+	<div id="dropZone">Drop files here or click to select files</div>
+	<input type="file" aria-label="file" id="fileInput" multiple style="display: none;">
+	<div class="file-section">
+		<button id="toggleFileList">Show Files</button>
+		<div id="fileListContainer" class="collapse">
+			<h4>Loaded Files <span id="fileCount">0</span></h4>
+			<ul id="fileList"></ul>
+			<button id="clearAllFiles">Clear All</button>
+		</div>
+	</div>
+	<pre id="results"></pre>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

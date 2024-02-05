@@ -1,0 +1,130 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 20px;
+	background-color: #121212;
+	color: #BBB;
+}
+
+.input-container,
+#dropZone,
+pre {
+	background-color: #1E1E1E;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+#fileListContainer {
+	display: block;
+	overflow: auto;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: #333;
+	border-radius: 5px;
+}
+
+#dropZone {
+	border: 2px dashed #3A3B3C;
+	text-align: center;
+	cursor: pointer;
+	color: #58A6FF;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.input-section {
+	flex: 1;
+	margin-right: 160px;
+}
+
+.file-section {
+	width: 40%;
+	max-width: 320px;
+}
+
+#fileListContainer.collapse {
+	display: none;
+}
+
+#fileListContainer.expand {
+	display: block;
+	width: auto;
+}
+
+button {
+	cursor: pointer;
+	background-color: #0056b3;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin-top: 10px;
+}
+
+button:hover {
+	background-color: #003d82;
+}
+
+.commandInput {
+	flex-grow: 1;
+	margin-right: 5px;
+	width: auto;
+	max-width: 170px;
+}
+
+.command {
+	display: flex;
+	align-items: center;
+}
+
+.removeCommand {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+#commandContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+h4 {
+	color: #58A6FF;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 5px;
+	color: #BBB;
+}
+
+#fileList li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+	background-color: #2A2A2A;
+	border-radius: 4px;
+	margin-bottom: 5px;
+}
+
+#fileList li button {
+	background-color: #9A0007;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 5px 8px;
+}
+
+#fileList li button:hover {
+	background-color: #D32F2F;
+}
